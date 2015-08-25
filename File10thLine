@@ -1,0 +1,23 @@
+#!/user/bin/python
+'''
+this is not working 
+continue tmw
+'''
+import re
+
+linei = 9;
+try:
+	with open ("file.txt", "r") as f:
+		lines=f.readlines()
+		if (line[linei]):
+			print(line[linei].strip())
+			linei += 10
+                
+except IndexError:
+    print(linei)
+    print ("IndexError")
+except:
+    print ("other error")
+finally:
+    print(linei)
+    print ("finally")
