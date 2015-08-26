@@ -11,12 +11,11 @@ Line 10
 Line 20
 Line 30
 Line 40
+* version: Python 3.3.5
 """
 import re
 import string
 
-count = 0;
-#lines = set()
 try:
 	with open ("file1", "r") as f:
 		lines = f.readlines()
@@ -27,6 +26,7 @@ except:
 finally:
     pass
 	
+count = 0;
 for line in lines:
 	count += 1
 	if count % 10 == 0:
