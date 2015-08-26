@@ -1,23 +1,35 @@
 #!/user/bin/python
-'''
-this is not working 
-continue tmw
-'''
+"""
+* input: file1
+Line 1
+Line 2
+Line 3
+...
+Line 40
+* output:
+Line 10
+Line 20
+Line 30
+Line 40
+"""
 import re
+import string
 
-linei = 9;
+count = 0;
+#lines = set()
 try:
-	with open ("file.txt", "r") as f:
-		lines=f.readlines()
-		if (line[linei]):
-			print(line[linei].strip())
-			linei += 10
-                
+	with open ("file1", "r") as f:
+		lines = f.readlines()
+		#print (lines)
+
 except IndexError:
-    print(linei)
     print ("IndexError")
 except:
     print ("other error")
 finally:
-    print(linei)
-    print ("finally")
+    pass
+	
+for line in lines:
+	count += 1
+	if count % 10 == 0:
+	    print (line.strip())
