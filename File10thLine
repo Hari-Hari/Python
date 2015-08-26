@@ -20,8 +20,6 @@ count = 0;
 try:
 	with open ("file1", "r") as f:
 		lines = f.readlines()
-		#print (lines)
-
 except IndexError:
     print ("IndexError")
 except:
